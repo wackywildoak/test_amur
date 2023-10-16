@@ -7,6 +7,13 @@
     display: none;
   }
 
+  .social-icons.mobile {
+    margin: 0;
+    padding: 0;
+    margin-right: 20%;
+    
+  }
+
   .main-result img {
     width: 100%;
     margin-right: 5px;
@@ -41,15 +48,17 @@
     display: none;
   }
 
-  .sidebar {
+  .sidebar-mobile {
     margin-bottom: 10%;
     height: 457px;
-    width: 100%;
+    width: 280px;
     background-color: var(--bg2-color);
+    margin-top: 10%;
   }
 
-  .col-2.sideb {
-    display: none;
+  .col-2.sideb-mobile {
+    align-self: center;
+
   }
 
   .list-group {
@@ -70,8 +79,9 @@
     margin-bottom: 20px;
   }
 
-  .strelka {
-    padding-top: 50px;
+  .strelka-mobile {
+    margin-top: -50px;
+    margin-right: 75px;
     float: right;
   }
 
@@ -86,24 +96,89 @@
   .card.f.card-4 {
     display: none;
   }
+
+  .main-result {
+    margin-top: 70px;
+    margin-bottom: 61px;
+  }
+  
+  .row.result {
+    margin-left: 15%;
+  }
+  
+  .col-4-md.result-block {
+    background: url(../img/result.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 271px;
+    height: 141px;
+    margin-right: 10%;
+    margin-bottom: 50px;
+    
+  }
+
+  .card.f.e.card-1 {
+    padding-bottom: 20px;
+    width: 270px;
+  
+  }
+
+  .card-title.e {
+    position: absolute;
+    color: white;
+    font-size: 16px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 40px;
+  }
+
+  .nav-h-bottom.ans-str {
+   margin-top: 9%;
+  }
+  
 }
+
+
+
 
 @media only screen and (min-width: 480px) {
   .header-mobile {
     display: none;
   }
+
+  .sidebar-mobile {
+    display: none;
+  }
+  
+  .dropdown {
+    display: none;
+  }
 }
+
+
 
 @media only screen and (min-width: 998px) {
   .header-tablet {
     display: none;
   }
+
+  .sidebar-mobile {
+    display: none;
+  }
+
+  .dropdown {
+    display: none;
+  }
+  
 }
+
 
 @media only screen and (max-width: 768px) {
   .header-desktop {
     display: none;
   }
+
+  
 
   .main-result img {
     width: 100%;
@@ -142,6 +217,7 @@
     background-color: var(--bg2-color);
   }
 
+  
   .col-2.sideb {
     display: none;
   }
