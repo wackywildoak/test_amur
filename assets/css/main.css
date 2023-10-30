@@ -29,6 +29,11 @@ a {
   text-decoration: none;
 }
 
+textarea {
+  resize: none;
+}
+
+
 /* ------------------------- General  ----------------------- */
 
 .wrapper {
@@ -67,7 +72,7 @@ main.main {
   padding: 20px;
   border: 2px solid var(--accent-color);
   width: 50%;
-  height: 400px;;
+  height: 500px;;
   
 }
 
@@ -88,6 +93,11 @@ label {
   width: 500px;
 }
 
+.ask_question_textarea {
+  height: 200px;
+}
+
+
 .input-title {
   margin-right: 50px;
   width: 100px;
@@ -99,7 +109,7 @@ label {
   border: 1px solid var(--contrast-color);
   height: 45px;
   width: 200px;
-  margin-top: 70px;
+  margin-top: 25px;
   margin-left: 33%;
   
 }

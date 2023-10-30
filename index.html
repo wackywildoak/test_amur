@@ -17,12 +17,12 @@
 <body>
   <div class="wrapper"> <!--wrapper-->
 
-    <div class="modal" id="modal-window">
+    <div class="modal" id="modal-window"> <!-- Модальное окно -->
 
       <div class="modal-content">
         <span class="close">&times;</span>
-        <form id = "ask_question" action="" class = "ask_question_form">
-          <label> 
+        <form id="ask_question" action="" class="ask_question_form">
+          <label>
             <span class="input-title">Ваше имя:</span>
             <input class="ask_question_input" type="text" name="name" id="name" placeholder="Иван Иванов">
           </label>
@@ -32,15 +32,15 @@
           </label>
           <label>
             <span class="input-title">Ваш вопрос:</span>
-            <input class="ask_question_input" type="question" name="question" id="question" placeholder="Хочу спросить...?">
+            <textarea class="ask_question_input ask_question_textarea" name="comment" placeholder="Распишите свой вопрос"></textarea>
           </label>
-          <button id = "ask_question_btn" type="submit_ask" class="btn ask_question_btn btn-outline-secondary ">
+          <button id="ask_question_btn" type="submit_ask" class="btn ask_question_btn btn-outline-secondary ">
             Задать вопрос
-          </button>  
+          </button>
         </form>
 
       </div>
-    </div>
+    </div> <!-- Модальное окно -->
 
 
     <header class="header"> <!--header-->
@@ -64,7 +64,8 @@
               </div>
             </div>
             <div class="col text-center">
-              <button id = "modal-btn" type="button" class="btn btn-f btn-outline-secondary justify-content-center mt-2 me-5">
+              <button id="modal-btn" type="button"
+                class="btn btn-f btn-outline-secondary justify-content-center mt-2 me-5">
                 Написать нам
               </button>
             </div>
@@ -129,7 +130,7 @@
 
                 <nav class="menu-mobile">
                   <ul class="menu__list-mobile">
-                    
+
                     <ul class="social-icons mobile d-flex justify-content-end mb-5">
                       <li><a href="" class="social-link vk"></a></li>
                       <li><a href="" class="social-link twitter"></a></li>
@@ -138,7 +139,8 @@
                       <li><a href="" class="social-link ok"></a></li>
                     </ul>
                     <form class="d-flex" role="search">
-                      <input class="form-control mobile me-2" type="search" placeholder="Поиск по сайту" aria-label="Поиск">
+                      <input class="form-control mobile me-2" type="search" placeholder="Поиск по сайту"
+                        aria-label="Поиск">
                     </form>
                     <li class="menu__item-mobile">
                       <a class="menu__link-mobile active" href="#">
@@ -182,11 +184,11 @@
               <div class="col-6">
                 <a href="#" class="logo-mobile justify-content-center">
                   <img class="logo__img-mobile" src="assets/img/logo.png" alt="Логотип">
-                </a>      
+                </a>
               </div>
               <div class="col m-right">
                 <button class="btn btn-find-head-mobile" type="submit">
-                   <img src="assets/img/bx_bx-search.png"alt="">
+                  <img src="assets/img/bx_bx-search.png" alt="">
                 </button>
               </div>
             </div>
@@ -201,7 +203,7 @@
           <a href="#" class="logo-tablet">
             <img class="logo__img-tablet" src="assets/img/logo-bottom.png" alt="Логотип">
           </a>
-          
+
           <nav class="menu-tablet">
             <ul class="menu__list-tablet">
               <ul class="social-icons d-flex justify-content-end mb-5 ms-5">
@@ -302,15 +304,15 @@
         <div class="container">
           <div class="row result">
             <div class="col-4-md result-block">
-             
+
               <h2 class="h-result h-blue">57</h2>
               <p class="result-text">
-                семьям, обратившимся 
+                семьям, обратившимся
                 к нам, мы помогли
               </p>
             </div>
             <div class="col-4-md result-block">
-             
+
               <h2 class="h-result h-orange">24/7</h2>
               <p class="result-text">
                 мы принимаем обращения ежедневно
@@ -356,7 +358,8 @@
             </ul>
           </div>
           <div class="dropdown">
-            <button class="btn btn-secondary drop dropdown-toggle" id="dropdownMenuButton2" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <button class="btn btn-secondary drop dropdown-toggle" id="dropdownMenuButton2" type="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
               Всё
             </button>
             <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="dropdownMenuButton2">
@@ -566,7 +569,7 @@
                     d="M0.576291 43.9688C0.559066 44.2444 0.768524 44.4818 1.04413 44.499L5.53536 44.7797C5.81097 44.797 6.04836 44.5875 6.06558 44.3119C6.08281 44.0363 5.87335 43.7989 5.59774 43.7817L1.60553 43.5322L1.85505 39.54C1.87227 39.2643 1.66281 39.027 1.38721 39.0097C1.1116 38.9925 0.874219 39.202 0.856993 39.4776L0.576291 43.9688ZM7.23008 1.36168C9.06747 3.11555 11.1399 5.06924 12.7654 7.93424C14.3858 10.7901 15.5753 14.5788 15.5753 20H16.5753C16.5753 14.4212 15.3482 10.4599 13.6352 7.44076C11.9274 4.43076 9.74983 2.38445 7.92056 0.638322L7.23008 1.36168ZM15.5753 20C15.5753 25.1066 12.6227 30.3691 9.24309 34.7157C5.87676 39.0452 2.15529 42.3803 0.744507 43.6251L1.40613 44.3749C2.82868 43.1197 6.6072 39.7349 10.0325 35.3295C13.4446 30.9413 16.5753 25.4537 16.5753 20H15.5753Z"
                     fill="black" />
                 </svg>
-                <button id = "modal-btn-sidebar" type="button" class="btn btn-ans btn-outline-secondary ">
+                <button id="modal-btn-sidebar" type="button" class="btn btn-ans btn-outline-secondary ">
                   Задать вопрос
                 </button>
                 <img src="assets/img/sidebar_img.png" alt="">
@@ -577,13 +580,13 @@
             <div class="col text-center sideb-mobile">
               <div class="sidebar-mobile">
                 <h4 class="h-ans">Наши специалисты готовы ответить на Ваши вопросы.</h4>
-                <svg class="strelka-mobile" xmlns="http://www.w3.org/2000/svg" width="17" height="45" viewBox="0 0 17 45"
-                  fill="none">
+                <svg class="strelka-mobile" xmlns="http://www.w3.org/2000/svg" width="17" height="45"
+                  viewBox="0 0 17 45" fill="none">
                   <path
                     d="M0.576291 43.9688C0.559066 44.2444 0.768524 44.4818 1.04413 44.499L5.53536 44.7797C5.81097 44.797 6.04836 44.5875 6.06558 44.3119C6.08281 44.0363 5.87335 43.7989 5.59774 43.7817L1.60553 43.5322L1.85505 39.54C1.87227 39.2643 1.66281 39.027 1.38721 39.0097C1.1116 38.9925 0.874219 39.202 0.856993 39.4776L0.576291 43.9688ZM7.23008 1.36168C9.06747 3.11555 11.1399 5.06924 12.7654 7.93424C14.3858 10.7901 15.5753 14.5788 15.5753 20H16.5753C16.5753 14.4212 15.3482 10.4599 13.6352 7.44076C11.9274 4.43076 9.74983 2.38445 7.92056 0.638322L7.23008 1.36168ZM15.5753 20C15.5753 25.1066 12.6227 30.3691 9.24309 34.7157C5.87676 39.0452 2.15529 42.3803 0.744507 43.6251L1.40613 44.3749C2.82868 43.1197 6.6072 39.7349 10.0325 35.3295C13.4446 30.9413 16.5753 25.4537 16.5753 20H15.5753Z"
                     fill="black" />
                 </svg>
-                <button id = "modal-btn-sidebar" type="button" class="btn btn-ans btn-outline-secondary ">
+                <button id="modal-btn-sidebar" type="button" class="btn btn-ans btn-outline-secondary ">
                   Задать вопрос
                 </button>
                 <img src="assets/img/sidebar_img.png" alt="">
@@ -622,7 +625,8 @@
             </ul>
           </div>
           <div class="dropdown">
-            <button class="btn btn-secondary drop dropdown-toggle" id="dropdownMenuButton2" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <button class="btn btn-secondary drop dropdown-toggle" id="dropdownMenuButton2" type="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
               Всё
             </button>
             <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="dropdownMenuButton2">
