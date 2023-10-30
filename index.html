@@ -21,10 +21,24 @@
 
       <div class="modal-content">
         <span class="close">&times;</span>
-        <div class="input-group mb-3">
-          <span class="input-group-text" id="basic-addon1">@</span>
-          <input type="text" class="form-control" placeholder="Имя пользователя" aria-label="Имя пользователя" aria-describedby="basic-addon1">
-        </div>
+        <form id = "ask_question" action="" class = "ask_question_form">
+          <label> 
+            <span class="input-title">Ваше имя:</span>
+            <input class="ask_question_input" type="text" name="name" id="name" placeholder="Иван Иванов">
+          </label>
+          <label>
+            <span class="input-title">Ваша почта:</span>
+            <input class="ask_question_input" type="email" name="email" id="email" placeholder="family@portal.ru">
+          </label>
+          <label>
+            <span class="input-title">Ваш вопрос:</span>
+            <input class="ask_question_input" type="question" name="question" id="question" placeholder="Хочу спросить...?">
+          </label>
+          <button id = "ask_question_btn" type="submit_ask" class="btn ask_question_btn btn-outline-secondary ">
+            Задать вопрос
+          </button>  
+        </form>
+
       </div>
     </div>
 

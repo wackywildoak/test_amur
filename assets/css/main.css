@@ -62,12 +62,58 @@ main.main {
 }
 
 .modal-content {
-  background-color: #fefefe;
+  background-color: var(--bg2-color);
   margin: 15% auto;
   padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
+  border: 2px solid var(--accent-color);
+  width: 50%;
+  height: 400px;;
+  
 }
+
+
+
+.ask_question_form {
+  margin-left: 50px;
+}
+
+
+label {
+  display: flex;
+  margin-bottom: 20px
+
+}
+
+.ask_question_input {
+  width: 500px;
+}
+
+.input-title {
+  margin-right: 50px;
+  width: 100px;
+}
+
+
+.btn.ask_question_btn.btn-outline-secondary {
+  border-radius: 4px;
+  border: 1px solid var(--contrast-color);
+  height: 45px;
+  width: 200px;
+  margin-top: 70px;
+  margin-left: 33%;
+  
+}
+
+.btn.ask_question_btn.btn-outline-secondary:hover {
+  border-radius: 4px;
+  border: 1px solid #b7c136;
+  height: 45px;
+  width: 200px;
+  background-color: #b7c136;
+  color: var(--bg-color);
+}
+
+
 
 .close {
 
