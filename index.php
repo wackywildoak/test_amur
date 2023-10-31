@@ -32,13 +32,14 @@
           </label>
           <label>
             <span class="input-title">Ваш вопрос:</span>
-            <textarea class="ask_question_input ask_question_textarea" name="comment" placeholder="Распишите свой вопрос"></textarea>
+            <textarea class="ask_question_input ask_question_textarea" name="message"
+              id = "message" placeholder="Распишите свой вопрос"></textarea>
           </label>
-          <button id="ask_question_btn" type="submit_ask" class="btn ask_question_btn btn-outline-secondary ">
+          <button id="ask_question_btn" type="submit" class="btn ask_question_btn btn-outline-secondary ">
             Задать вопрос
           </button>
+          <div class="error_message" id = "error_mess"></div>
         </form>
-
       </div>
     </div> <!-- Модальное окно -->
 
