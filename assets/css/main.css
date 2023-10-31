@@ -72,11 +72,18 @@ main.main {
   padding: 20px;
   border: 2px solid var(--accent-color);
   width: 50%;
-  height: 500px;;
+  height: 550px;
   
 }
 
+.error_message {
+  text-align: center;
+  margin-top: 30px;
+  width: 400px;
+  margin-left: 177px;
 
+  
+}
 
 .ask_question_form {
   margin-left: 50px;

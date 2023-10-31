@@ -21,7 +21,7 @@
 
       <div class="modal-content">
         <span class="close">&times;</span>
-        <form id="ask_question" action="" class="ask_question_form">
+        <form id="ask_question" action="" class="ask_question_form" method = "post">
           <label>
             <span class="input-title">Ваше имя:</span>
             <input class="ask_question_input" type="text" name="name" id="name" placeholder="Иван Иванов">

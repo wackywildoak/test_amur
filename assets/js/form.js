@@ -25,10 +25,13 @@ $("#ask_question_btn").on("click", function() {
         beforeSend: function () {
             $("#ask_question_btn").prop("disabled", true);
         },
-        success: function (data) {
-            alert(data);
+        success: function () {
+            
             $("#ask_question_btn").prop("disabled", false);
+            $('#ask_question').trigger('reset');
+            $("#error_mess").text("Мы рассмотрим ваш вопрос в ближайшее время!");
         }
+    
 
     });
 });
