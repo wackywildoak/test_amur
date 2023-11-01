@@ -72,7 +72,7 @@ main.main {
   padding: 20px;
   border: 2px solid var(--accent-color);
   width: 50%;
-  height: 550px;
+  height: 600px;
   
 }
 
@@ -107,9 +107,12 @@ label {
 
 .input-title {
   margin-right: 50px;
-  width: 100px;
+  width: 150px;
 }
 
+.input-title-gender {
+  margin: 0 50px 0 10px;
+}
 
 .btn.ask_question_btn.btn-outline-secondary {
   border-radius: 4px;

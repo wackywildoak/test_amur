@@ -12,6 +12,8 @@
   <link rel="stylesheet" href="assets/css/main.css">
   <link rel="stylesheet" href="assets/css/adaptive.css">
   <title>Семейный портал - Амурская область</title>
+
+
 </head>
 
 <body>
@@ -21,24 +23,40 @@
 
       <div class="modal-content">
         <span class="close">&times;</span>
-        <form id="ask_question" action="" class="ask_question_form" method = "post">
+        <form id="ask_question" action="" class="ask_question_form" method="post">
           <label>
             <span class="input-title">Ваше имя:</span>
-            <input class="ask_question_input" type="text" name="name" id="name" placeholder="Иван Иванов">
+            <input class="ask_question_input" type="text" name="name" id="name" placeholder="Иван Иванов" required>
+          </label>
+          <label id="gender">
+            <span class="input-title">Ваш пол:</span>
+            <input type="radio" value="man" name="gender" for="gender" checked> <span
+              class="input-title-gender">Мужской</span>
+            <input type="radio" value="woman" name="gender" for="gender"> <span
+              class="input-title-gender">Женский</span>
+          </label>
+          <label>
+            <span class="input-title">Ваша профессия:</span>
+            <select name="professions" id="professions">
+              <option value="value1">Значение 1</option>
+              <option value="value2" selected>Значение 2</option>
+              <option value="value3">Значение 3</option>
+            </select>
           </label>
           <label>
             <span class="input-title">Ваша почта:</span>
-            <input class="ask_question_input" type="email" name="email" id="email" placeholder="family@portal.ru">
+            <input class="ask_question_input" type="email" name="email" id="email" placeholder="family@portal.ru"
+              required>
           </label>
           <label>
             <span class="input-title">Ваш вопрос:</span>
-            <textarea class="ask_question_input ask_question_textarea" name="message"
-              id = "message" placeholder="Распишите свой вопрос"></textarea>
+            <textarea class="ask_question_input ask_question_textarea" name="message" id="message"
+              placeholder="Распишите свой вопрос" required></textarea>
           </label>
           <button id="ask_question_btn" type="submit" class="btn ask_question_btn btn-outline-secondary ">
             Задать вопрос
           </button>
-          <div class="error_message" id = "error_mess"></div>
+          <div class="error_message" id="error_mess"></div>
         </form>
       </div>
     </div> <!-- Модальное окно -->
