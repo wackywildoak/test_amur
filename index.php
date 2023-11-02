@@ -38,9 +38,14 @@
           <label>
             <span class="input-title">Ваша профессия:</span>
             <select name="professions" id="professions">
-              <option value="value1">Значение 1</option>
-              <option value="value2" selected>Значение 2</option>
-              <option value="value3">Значение 3</option>
+              <option value="Разработчик">Разработчик</option>
+              <option value="Врач" selected>Врач</option>
+              <option value="Менеджер">Менеджер</option>
+              <option value="Электрик">Электрик</option>
+              <option value="Юрист">Юрист</option>
+              <option value="Аналитик">Аналитик</option>
+              <option value="Экономист">Экономист</option>
+              <option value="Учитель">Учитель</option>
             </select>
           </label>
           <label>

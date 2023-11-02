@@ -18,7 +18,7 @@ $("#ask_question_btn").on("click", function() {
     } else if (gender == "") {
         $("#error_mess").text("Укажите пол");
         return false;
-    }  else if (professions = "") {
+    }  else if (professions == "") {
         $("#error_mess").text("Укажите вашу профессию");
         return false;
     }
