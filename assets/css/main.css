@@ -565,6 +565,37 @@ a.social-link.ok:hover {
 
 /* ------------------------- Main  ----------------------- */
 
+/* -------------- main-reg ----------------- */
+
+.main-reg {
+  display: flex;
+  justify-content: center;
+  margin-top: 120px;
+}
+
+
+.input-title.reg-title {
+  margin-left: 30px;
+  margin-right: 0;
+}
+
+
+
+
+
+
+
+
+
+
+/* -------------- main-reg ----------------- */
+
+
+
+
+
+
+
 /* --------------- Main-banner --------------- */
 
 .carousel-caption h1 {

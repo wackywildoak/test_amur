@@ -63,7 +63,18 @@
     </header> <!--header end-->
 
     <main class="main"> <!--main-->
-      
+      <div class="main-reg">
+				<form action="" method="POST" class="reg-form">
+					<span class="input-title reg-title">Ваша профессия:</span>
+					<label>
+						<input name="login">
+					</label>
+					<span class="input-title reg-title">Ваша профессия:</span>
+					<label>
+						<input name="password" type="password">
+					</label>
+				</form>
+			</div>
     </main> <!--main end -->
 
     <!-- footer -->
