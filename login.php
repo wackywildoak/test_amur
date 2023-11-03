@@ -63,6 +63,7 @@
     </header> <!--header end-->
 
     <main class="main"> <!--main-->
+    <!--  -->
       <div class="main-reg">
 				<form action="" method="POST" class="reg-form">
 					<span class="input-title reg-title">Логин:</span>
