@@ -18,7 +18,7 @@
               </div>
             </div>
             <div class="col text-center">
-							<a href="login.php" class="">Войти</a>
+							<a href="login.php" class="login-header">Войти</a>
               <button id="modal-btn" type="button"
                 class="btn btn-f btn-outline-secondary justify-content-center mt-2 me-5">
                 Написать нам

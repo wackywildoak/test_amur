@@ -67,11 +67,11 @@
 				<form action="" method="POST" class="reg-form">
 					<span class="input-title reg-title">Логин:</span>
 					<label>
-						<input name="login">
+						<input class="input-reg" id="input-login" name="login">
 					</label>
 					<span class="input-title reg-title">Пароль:</span>
 					<label>
-						<input name="password" type="password">
+						<input class="input-reg" id="input-password" name="password" type="password">
 					</label>
 				</form>
 			</div>
