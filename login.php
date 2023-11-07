@@ -64,7 +64,9 @@
 
     <main class="main"> <!--main-->
       <div class="main-reg">
+        
 				<form action="" method="POST" class="reg-form">
+          <h2 class="login-h">Вход</h2>
 					<span class="input-title reg-title">Логин:</span>
 					<label>
 						<input class="input-reg" id="input-login" name="login">
@@ -73,6 +75,9 @@
 					<label>
 						<input class="input-reg" id="input-password" name="password" type="password">
 					</label>
+          <button type="button" class="btn btn-login btn-outline-secondary">
+                      Войти
+          </button>
 				</form>
 			</div>
     </main> <!--main end -->
