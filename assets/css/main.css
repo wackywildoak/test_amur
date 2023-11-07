@@ -610,11 +610,13 @@ a.social-link.ok:hover {
 
 .btn.btn-login.btn-outline-secondary {
   border-radius: 4px;
-  border: 1px solid var(--contrast-color);
+  border: 1px solid #b7c136;
   height: 45px;
   width: 200px;
   margin-top: 35px;
   margin-left: 50px;
+  background-color: #b7c136;
+  color: var(--bg-color);
   
 }
 
@@ -623,8 +625,8 @@ a.social-link.ok:hover {
   border: 1px solid #b7c136;
   height: 45px;
   width: 200px;
-  background-color: #b7c136;
-  color: var(--bg-color);
+  background-color: var(--bg-color);
+  color: #b7c136;
 }
 
 
