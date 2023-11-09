@@ -67,12 +67,13 @@ main.main {
 }
 
 .modal-content {
-  background-color: var(--bg2-color);
-  margin: 15% auto;
+  background-color: var(--bg-color);
+  margin: 5% auto;
   padding: 20px;
   border: 2px solid var(--accent-color);
+  border-radius: 20px;
   width: 50%;
-  height: 600px;
+  height: 750px;
   
 }
 

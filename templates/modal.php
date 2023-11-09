@@ -33,13 +33,17 @@
               required>
           </label>
           <label>
+            <span class="input-title">Ваш номер телефона:</span>
+            <input class="ask_question_input" type="text" name="phone" id="phone" placeholder="+7(___)___-__-__"
+              required>
+          </label>
+          <label>
             <span class="input-title">Ваш вопрос:</span>
             <textarea class="ask_question_input ask_question_textarea" name="message" id="message"
               placeholder="Распишите свой вопрос" required></textarea>
           </label>
-          <button id="ask_question_btn" type="submit" class="btn ask_question_btn btn-outline-secondary ">
-            Задать вопрос
-          </button>
+          <input id="ask_question_btn" type="submit" class="btn ask_question_btn btn-outline-secondary ">
+          </input>
           <div class="error_message" id="error_mess"></div>
         </form>
       </div>
