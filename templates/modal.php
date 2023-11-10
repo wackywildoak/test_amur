@@ -1,7 +1,7 @@
 <div class="modal" id="modal-window"> <!-- Модальное окно -->
-
       <div class="modal-content">
         <span class="close">&times;</span>
+        <?php if (!empty($_SESSION["auth"])): ?>
         <form id="ask_question" action="" class="ask_question_form" method="post">
           <label>
             <span class="input-title">Ваше имя:</span>
@@ -48,5 +48,8 @@
             <p class="error_message">Ошибка</p>
           </div>
         </form>
+        <?php else: ?>
+        <p>авторизируйтесь</p>
+        <?php endif; ?>
       </div>
     </div> <!-- Модальное окно -->

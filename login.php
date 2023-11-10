@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,32 +10,7 @@
 </head>
 
 <body>
-  <?php
-  session_start();
-
-  $login = $_POST["login"];
-  $password = $_POST["password"];
-
-  $dbc = mysqli_connect('localhost', 'root', '', 'reg');
-
-  if (!empty($login) && !empty($password)) {
-    $query = "SELECT * FROM users_log WHERE log_name = '$login' and log_password = '$password'";
-    $res = mysqli_query($dbc, $query);
-    $user = mysqli_fetch_array($res);
-
-    if (!empty($user)) {
-      $_SESSION['auth'] = true;
-      echo "kruto";
-    } else {
-      echo "ne kruto";
-      die();
-
-    }
-
-
-  }
-
-  ?>
+  <? include "php/log_in.php" ?>
   <div class="wrapper"> <!--wrapper-->
 
     <? include 'templates/modal.php'; ?>
@@ -44,8 +21,17 @@
     <main class="main"> <!--main-->
     <!--  -->
       <div class="main-reg">
-
-        <form action="" method="post" class="reg-form">
+        <?php if (!empty($_SESSION["auth"])): ?>
+          <div class="auth-success">
+          <p>Вы успешно авторизированы!</p>
+          <form action="php/log_out.php" method="post">
+          <button type="submit" class="btn btn-login btn-outline-secondary">
+            Выйти
+          </button>
+          </form>
+        </div>
+        <?php else : ?>
+          <form action="" method="post" class="reg-form">
           <h2 class="login-h">Вход</h2>
           <span class="input-title reg-title">Имя пользователя:</span>
           <label>
@@ -59,6 +45,7 @@
             Войти
           </button>
         </form>
+        <?php endif;?>
       </div>
     </main> <!--main end -->
     <!-- footer -->

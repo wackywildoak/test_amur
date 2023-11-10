@@ -12,7 +12,7 @@
             </div>
             <div class="col-2">
               <div class="logo text-center">
-                <a href="index.php">
+                <a href="http://test-amur/">
                   <img src="assets/img/logo-top.png" alt="" class="logo-img ">
                 </a>
               </div>
@@ -51,7 +51,7 @@
             </div>
             <div class="col-2 ">
               <div class="logo text-center">
-                <a href="index.php">
+                <a href="http://test-amur/">
                   <img src="assets/img/logo-bottom.png" alt="" class="logo-img ">
                 </a>
               </div>
