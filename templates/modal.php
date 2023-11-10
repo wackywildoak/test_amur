@@ -44,7 +44,9 @@
           </label>
           <input id="ask_question_btn" type="submit" class="btn ask_question_btn btn-outline-secondary ">
           </input>
-          <div class="error_message" id="error_mess"></div>
+          <div class="error_message_block" id="error_mess">
+            <p class="error_message">Ошибка</p>
+          </div>
         </form>
       </div>
     </div> <!-- Модальное окно -->

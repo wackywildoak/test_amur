@@ -1,5 +1,6 @@
 $(document).ready(function () {
-
+    let errorMessageBlock = document.getElementById("error_mess");
+    let errorMessage = document.getElementsByClassName("error_message");
     $('#phone').inputmask("+7 (999) 999-99-99"); // маска на номер телефона
 
     $("#ask_question").on("submit", function (event) {
@@ -18,31 +19,36 @@ $(document).ready(function () {
             phone = phone.replace(/[+]/g, ""); // Удаляем +
         }
 
-        console.log(phone);
+        // console.log(phone);
+
+        // валидация на отсутствие ввода
         if (name == "") {
-            // валидация на отсутствие ввода
-            $("#error_mess").text("Введите ваше имя");
+            errorMessageBlock.style.display = 'block';
+            errorMessage[0].textContent = "Введите своё имя";
             return false;
         } else if (email == "") {
-            $("#error_mess").text("Введите адрес вашей почты");
+            errorMessageBlock.style.display = 'block';
+            errorMessage[0].textContent = "Введите свою почту";
             return false;
         } else if (message.length < 10) {
-            $("#error_mess").text("В вопросе должно быть не менее 10 символов");
+            errorMessageBlock.style.display = 'block';
+            errorMessage[0].textContent = "Сообщение должно содержать не меньше 10 символов";
             return false;
         } else if (gender == "") {
-            $("#error_mess").text("Укажите пол");
+            errorMessageBlock.style.display = 'block';
+            errorMessage[0].textContent = "Выберите пол";
             return false;
         } else if (professions == "") {
-            $("#error_mess").text("Укажите вашу профессию");
+            errorMessageBlock.style.display = 'block';
+            errorMessage[0].textContent = "Выберите профессию";
             return false;
         } else if (phone == "") {
-            $("#error_mess").text("Укажите ваш номер телефона");
+            errorMessageBlock.style.display = 'block';
+            errorMessage[0].textContent = "Введите номер телефона";
             return false;
         }
 
         deleteMask();
-
-        $("#error_mess").text("");
 
         $.ajax({
             //ajax запрос к php
@@ -62,9 +68,11 @@ $(document).ready(function () {
                 $("#ask_question_btn").prop("disabled", true);
             },
             success: function (data) {
+                errorMessageBlock.style.display = 'block';
+                errorMessageBlock.style.backgroundColor = "#33CC00";
+                errorMessage[0].textContent = "Сообщение успешно отправлено!";
                 $("#ask_question_btn").prop("disabled", false);
                 $("#ask_question").trigger("reset");
-                $("#error_mess").text("Мы рассмотрим ваш вопрос в ближайшее время!");
             },
         });
         event.preventDefault();
