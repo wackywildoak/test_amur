@@ -643,10 +643,13 @@ a.social-link.ok:hover {
   
   width: 300px;
   height: 50x;
+  margin-top: 30%;
   
 }
 
-
+.auth-success p {
+  margin-left: 40px;
+}
 
 
 

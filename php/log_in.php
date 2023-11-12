@@ -1,6 +1,6 @@
 <?php
 $login = $_POST["login"];
-$password = $_POST["password"];
+$password = md5($_POST["password"]);
 
 $dbc = mysqli_connect('localhost', 'root', '', 'reg');
 
@@ -11,6 +11,8 @@ if (!empty ($login) && !empty($password)) {
 
     if(!empty($user)) {
         $_SESSION['auth'] = true;
+        $id = mysqli_insert_id($dbc);
+        $_SESSION['id'] = $id;
     } else {
         die();
     }
