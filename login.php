@@ -12,18 +12,15 @@
 <body>
   <? include "php/log_in.php" ?>
   <div class="wrapper"> <!--wrapper-->
-
+  
     <? include 'templates/modal.php'; ?>
+    <? include 'templates/header.php'; ?>
 
-    <header class="header"> <!--header-->
-      <? include 'templates/header.php'; ?>
-    </header> <!--header end-->
     <main class="main"> <!--main-->
-    <!--  -->
       <div class="main-reg">
         <?php if (!empty($_SESSION["auth"])): ?>
           <div class="auth-success">
-          <p>Вы успешно авторизированы!</p>
+          <p>Вы успешно авторизированы! <?echo $_COOKIE['login'];?></p>
           <form action="php/log_out.php" method="post">
           <button type="submit" class="btn btn-login btn-outline-secondary">
             Выйти

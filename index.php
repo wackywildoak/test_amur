@@ -11,16 +11,8 @@
 <body>
   <div class="wrapper"> <!--wrapper-->
 
-    <!-- Модальное окно -->
-
     <? include 'templates/modal.php';?>
-
-    <!-- Модальное окно end -->
-
-
-    <header class="header"> <!--header-->
-      <? include 'templates/header.php'; ?>
-    </header> <!--header end-->
+    <? include 'templates/header.php'; ?>
 
     <main class="main"> <!--main-->
       <div class="main-banner"> <!--main banner-->
