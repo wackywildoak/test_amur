@@ -19,6 +19,8 @@ if (!empty($login) && !empty($password)) {
         
     } else {
         $_SESSION['auth'] = false;
+        session_destroy();
+        session_regenerate_id();
         header("Location: /index.php");
         die();
     }
