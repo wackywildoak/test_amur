@@ -1,7 +1,7 @@
 <?php
 $login = $_POST["login"];
 $password = md5($_POST["password"]);
-
+$wrongPassword = "";
 $dbc = mysqli_connect('localhost', 'root', '', 'reg');
 
 if (!empty($login) && !empty($password)) {
@@ -19,9 +19,8 @@ if (!empty($login) && !empty($password)) {
         
     } else {
         $_SESSION['auth'] = false;
-        session_destroy();
-        session_regenerate_id();
-        header("Location: /index.php");
-        die();
+        $wrongPassword = "Неправильный пароль";
     }
+} else {
+    $wrongPassword = "Введите логин и пароль";
 }

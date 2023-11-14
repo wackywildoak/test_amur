@@ -41,6 +41,9 @@
           <button type="submit" class="btn btn-login btn-outline-secondary">
             Войти
           </button>
+          <div class="wrong-pass">
+            <?=$wrongPassword?>
+          </div>
         </form>
         <?php endif;?>
       </div>

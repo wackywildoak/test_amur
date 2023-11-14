@@ -623,7 +623,7 @@ a.social-link.ok:hover {
   border: 1px solid #b7c136;
   height: 45px;
   width: 200px;
-  margin-top: 35px;
+  margin-top: 25px;
   margin-left: 50px;
   background-color: #b7c136;
   color: var(--bg-color);
@@ -649,6 +649,12 @@ a.social-link.ok:hover {
 
 .auth-success p {
   margin-left: 40px;
+}
+
+.wrong-pass {
+  margin-left: 60px;
+  margin-top: 15px;
+
 }
 
 
