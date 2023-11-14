@@ -49,7 +49,11 @@
           </div>
         </form>
         <?php else: ?>
-        <p>авторизируйтесь</p>
+          <a href="login.php">
+            <button type="submit" class="btn btn-login auth-modal btn-outline-secondary">
+              Войти
+            </button>
+          </a>
         <?php endif; ?>
       </div>
     </div> <!-- Модальное окно -->

@@ -5,7 +5,7 @@
 
 <head>
   <? include 'templates/head.php'; ?>
-  <title>Семейный портал - Амурская область</title>
+  <title>Вход - Семейный портал - Амурская область</title>
 
 </head>
 

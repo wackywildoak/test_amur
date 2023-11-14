@@ -162,6 +162,10 @@ label {
   cursor: pointer;
 }
 
+.btn.btn-login.auth-modal.btn-outline-secondary {
+  margin-left: 37%;
+}
+
 
 
 /* ------------------------- Modal  ----------------------- */
