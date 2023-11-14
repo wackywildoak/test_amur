@@ -19,7 +19,11 @@
           </div>
         </div>
         <div class="col text-center">
+          <?php if (!empty($_SESSION["auth"])): ?>
+          <a href="login.php" class="login-header">Выйти</a>
+          <?php else: ?>
           <a href="login.php" class="login-header">Войти</a>
+          <?php endif;?>
           <button id="modal-btn" type="button" class="btn btn-f btn-outline-secondary justify-content-center mt-2 me-5">
             Написать нам
           </button>
